@@ -21,6 +21,18 @@ class MenuBtn extends React.Component {
       backgroundColor = '#7A5980';  
       iconName = 'heart';    
     }
+    else if (this.props.type === 'Gesture') {
+      backgroundColor = '#af5984';
+      iconName = 'heart';
+    }
+    else if (this.props.type === 'Study'){
+      backgroundColor = '#a23a6e';
+      iconName = 'star';
+    }
+    else if (this.props.type === 'FreeDraw'){
+      backgroundColor = '#961f5b';  
+      iconName = 'heart'; 
+    }
     else {
       backgroundColor = '#3B3B58';
       iconName = 'files-o';  

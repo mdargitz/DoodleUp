@@ -6,47 +6,73 @@ import LevelUp from './LevelUp';
 import Inspiration from './Inspiration';
 import Resources from './Resources';
 import LandingPage from './LandingPage';
+import Gesture from './training/Gesture';
+import Study from './training/Study';
+import FreeDraw from './training/FreeDraw';
+import { Provider } from 'react-redux';
+import store from './store';
 
 const RootStack = createStackNavigator({
   Landing: {
-    screen : LandingPage,
+    screen: LandingPage,
     navigationOptions: () => ({
       title: 'DoodleUp',
       headerBackTitle: 'back'
     })
   },
   Home: {
-    screen : HomeScreen,
+    screen: HomeScreen,
     navigationOptions: () => ({
       title: 'Home',
       headerBackTitle: 'back'
     })
   },
   Training: {
-    screen : Training,
+    screen: Training,
     navigationOptions: () => ({
       title: 'Training',
       headerBackTitle: 'back'
     })
   },
   LevelUp: {
-    screen : LevelUp,
+    screen: LevelUp,
     navigationOptions: () => ({
       title: 'LevelUp',
       headerBackTitle: 'back'
     })
   },
   Inspiration: {
-    screen : Inspiration,
+    screen: Inspiration,
     navigationOptions: () => ({
       title: 'Inspiration',
       headerBackTitle: 'back'
     })
   },
-  Resources : {
-    screen : Resources,
+  Resources: {
+    screen: Resources,
     navigationOptions: () => ({
       title: 'Resources',
+      headerBackTitle: 'back'
+    })
+  },
+  Gesture: {
+    screen: Gesture,
+    navigationOptions: () => ({
+      title: 'Gesture Drawing',
+      headerBackTitle: 'back'
+    })
+  },
+  FreeDraw: {
+    screen: FreeDraw,
+    navigationOptions: () => ({
+      title: 'Free Draw',
+      headerBackTitle: 'back'
+    })
+  },
+  Study: {
+    screen: Study,
+    navigationOptions: () => ({
+      title: 'Study Drawing',
       headerBackTitle: 'back'
     })
   },
@@ -61,6 +87,10 @@ const RootStack = createStackNavigator({
 
 export default class App extends React.Component {
   render() {
-    return <RootStack />;
+    return (
+      <Provider store={store}>
+        <RootStack />
+      </Provider>
+    );
   }
 }
