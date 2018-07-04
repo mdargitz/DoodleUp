@@ -1,45 +1,42 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View } from 'react-native';
 import CustomButton from '../CustomButton';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { fetchImage } from '../actions/training';
+import Loading from '../Loading';
+import Error from '../Error';
+import Exercise from './Exercise';
 
 class Gesture extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      started: false,
+      started: false
     };
   }
 
   componentDidMount(){
-    console.log('mounting view');
-    this.props.dispatch(fetchImage('person'));
-    console.log(this.props.image);
+    this.props.dispatch(fetchImage('2311062'));
   }
 
   render() {
-
-    if (this.state.started){
-      return (
-        <View
-          style={{flex: 1}}>
-          <Image
-            style={{height: 300, width: 200}}
-            source={{uri : this.props.image}}          
-          />
-          <CustomButton 
-            buttonText='Next Image'
-            onPress={()=> this.props.dispatch(fetchImage('person'))}
-          />
-        </View>
-      );
+    if (this.props.loading){
+      return <Loading />;
+    }
+    if (this.props.error){
+      return <Error />;
+    }
+    if (this.state.started && !this.props.loading){
+      return <Exercise 
+        navigate={() => this.props.navigation.navigate('Finished')}
+        collection='2311062'
+        points={2}
+      />;
     }
 
     return (
       <View>
-        <Text> In these exercises, try to capture the movement and form of each figure,
-        without spending too much time on the detail</Text>
+        <Text> In these exercises, study the image and try to replicate the detail to the best of your ability</Text>
         <CustomButton
           onPress={()=>this.setState({started : true})}
           buttonText='Go Train!'
@@ -51,7 +48,8 @@ class Gesture extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    image : state.image.url
+    loading : state.image.loading,
+    error : state.image.error
   };
 };
 

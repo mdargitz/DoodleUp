@@ -23,10 +23,9 @@ export const imageError = (error) => {
   };
 };
 
-export const fetchImage = (query) => dispatch => {
-  console.log('fetching Image');
+export const fetchImage = (collection) => dispatch => {
   dispatch(requestImage());
-  return fetch(`${UNSPLASH_API}&query=${query}`)
+  return fetch(`${UNSPLASH_API}&collections=${collection}`)
     .then(result => {
       console.log(result);
       return result.json();})

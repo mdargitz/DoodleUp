@@ -6,5 +6,12 @@ export const incrementExperience = (amount) => {
   };
 }; 
 
+export const INCREMENT_LEVEL = 'INCREMENT_LEVEL';
+export const incrementLevel = level => {
+  return {
+    type : INCREMENT_LEVEL,
+    level
+  };
+};
 
  
