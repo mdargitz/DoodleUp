@@ -27,13 +27,10 @@ export const fetchImage = (collection) => dispatch => {
   dispatch(requestImage());
   return fetch(`${UNSPLASH_API}&collections=${collection}`)
     .then(result => {
-      console.log(result);
       return result.json();})
     .then(result => {
-      console.log(result);
       dispatch(imageSuccess(result.urls.small));
     })
     .catch(error => {
-      console.log(error);
       dispatch(imageError(error));});
 };

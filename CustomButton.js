@@ -24,7 +24,10 @@ const styles = {
     padding: 10,
     backgroundColor: '#bc7c9c',
     borderRadius: 5,
-
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
   },
   textStyle : {
     color: '#fff',
