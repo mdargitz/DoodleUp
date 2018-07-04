@@ -40,15 +40,21 @@ class MenuBtn extends React.Component {
 
     const styles = StyleSheet.create({
       viewStyle : {
-
+        margin: 20
       },
       touchStyle : {
-        backgroundColor
+        backgroundColor,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
       },
       textStyle : {
         color: '#fff',
-        fontSize: 50,
-        padding: 50
+        fontSize: 30,
+        padding: 30
        
       }
     });
@@ -59,7 +65,7 @@ class MenuBtn extends React.Component {
           style={styles.touchStyle}
           onPress={this.props.onPress}
         >
-          <Icon name={iconName} size={60} color="#fff" />
+          <Icon name={iconName} size={30} color="#fff" />
           <Text
             style={styles.textStyle}
           >
