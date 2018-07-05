@@ -19,7 +19,7 @@ class LevelBtn extends React.Component {
   }
 
   isCompleted() {
-    if (this.props.level === this.props.requiredLevel + 1) {
+    if (this.props.level >= this.props.requiredLevel + 1) {
       return true;
     }
     return false;

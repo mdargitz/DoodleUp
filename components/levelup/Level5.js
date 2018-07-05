@@ -1,25 +1,17 @@
 import React from 'react';
-import {Text, View, Image} from 'react-native';
-import CustomButton from '../CustomButton';
-import { connect } from 'react-redux';
-import { incrementLevel } from '../../actions/points';
+import Challenge from './Challange';
 
-function Level5(props){
+export default function Level5(props){
   return (
-    <View>
-      <Text> Level 5 : Value &amp; Lighting</Text>
-      <Text> This challenge takes on the concepts of &apos;Value &amp; Lighting&apos;- how color and shading can add body to a piece.</Text>
-      <Text> Take an image like the one below and try to replicate the style of the lighting. Feel free to do more then turn them in here!</Text>
-      <Image source={{uri : 'https://image.ibb.co/m4B9CJ/reinhart_julian_569049_unsplash.jpg'}} style={{height: 350, width: 300}} />
-      <CustomButton
-        buttonText='Done!'
-        onPress={() => {
-          props.dispatch(incrementLevel());
-          props.navigation.navigate('LevelUp');
-        }}
-      />
-    </View>
+    <Challenge
+      titleText='Level 5 : Value &amp; Lighting'
+      challengeText='This challenge takes on the concepts of &apos;Value &amp; Lighting&apos;- 
+        how color and shading can add body to a piece.
+        Take an image like the one below and try to replicate the style of the lighting.
+        When you are done, complete this challenge!'
+      image='https://image.ibb.co/m4B9CJ/reinhart_julian_569049_unsplash.jpg'
+      level={5}
+      navigate={props.navigation.navigate}
+    />
   );
 }
-
-export default connect()(Level5);
