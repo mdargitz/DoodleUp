@@ -10,26 +10,38 @@ class Exercise extends React.Component {
   render() {
 
     return (
-      <View>
+      <View style={styles.viewStyle}>
         <Image
-          style={{ height: 300, width: 200 }}
+          style={{ height: '70%', width: '100%' }}
           source={{ uri: this.props.image }}
         />
-        <CustomButton
-          buttonText='Finished, Next!'
-          onPress={() => {
-            this.props.dispatch(incrementExperience(this.props.points));
-            this.props.dispatch(fetchImage(this.props.collection));
-          }}
-        />
-        <Button
-          title='I&apos;m Done'
-          onPress={this.props.navigate}
-        />
+        <View>
+          <CustomButton
+            buttonText='Finished, Next!'
+            onPress={() => {
+              this.props.dispatch(incrementExperience(this.props.points));
+              this.props.dispatch(fetchImage(this.props.collection));
+            }}
+          />
+          <Button
+            title='I&apos;m done, turn in my points'
+            onPress={this.props.navigate}
+            color='white'
+          />
+        </View>
       </View>
     );
   }
 }
+
+const styles = {
+  viewStyle: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#3B3B58',
+    height: '100%'
+  }
+};
 
 const mapStateToProps = state => {
   return {

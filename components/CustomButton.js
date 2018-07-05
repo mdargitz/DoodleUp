@@ -20,7 +20,7 @@ const styles = {
     alignItems: 'center'
   },
   touchStyle : {
-    margin: 20,
+    margin: 8,
     padding: 10,
     backgroundColor: '#bc7c9c',
     borderRadius: 5,
