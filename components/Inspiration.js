@@ -1,10 +1,17 @@
 import React from 'react';
-import { Text, Button, View, Linking } from 'react-native';
+import { Text, Button, View, Linking, ScrollView } from 'react-native';
+import { fetchArt } from '../actions/inspiration';
+import { connect } from 'react-redux';
+import ArtCard from './ArtCard';
 
-export default class Inspiration extends React.Component {
+class Inspiration extends React.Component {
+
+  componentDidMount(){
+    this.props.dispatch(fetchArt());
+  }
   render() {
     return (
-      <View>
+      <ScrollView>
         <Text>Inspiration - Check out some amazing artists!</Text>
         <Button
           title='Art Station'
@@ -18,8 +25,14 @@ export default class Inspiration extends React.Component {
           title='Behance'
           onPress={() => Linking.openURL('https://www.behance.net/')}
         />
+        <ArtCard number={0} />
+        <ArtCard number={1} />
+        <ArtCard number={2} />
+        <ArtCard number={3} />
         
-      </View>
+      </ScrollView>
     );
   }
 }
+
+export default connect()(Inspiration);

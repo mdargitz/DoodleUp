@@ -1,4 +1,4 @@
-import { REQUEST_ART, ART_SUCCESS, ART_ERROR } from "../actions/inspiration";
+import { REQUEST_ART, ART_SUCCESS, ART_ERROR } from '../actions/inspiration';
 
 const initialState = {
   art : [],
@@ -15,6 +15,7 @@ export default function inspirationReducer(state = initialState, action) {
   }
 
   if (action.type === ART_SUCCESS){
+    console.log('sending in success');
     return {
       ...state,
       art: action.data,
@@ -30,6 +31,6 @@ export default function inspirationReducer(state = initialState, action) {
       loading: false
     };
   }
-  
+
   return state;
 }
