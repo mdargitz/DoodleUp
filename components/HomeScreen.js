@@ -11,22 +11,28 @@ export default class HomeScreen extends React.Component {
           source={{ uri: 'https://image.ibb.co/g4Gb9y/background_1409028_640.png' }}
           style={styles.imageStyle}
         >
-          <Text style={styles.textStyle}>Select a card below to start your artistic journey!</Text>
           <MenuBtn
             onPress={() => navigation.navigate('Training')}
-            type='Training' />
+            type='Training' 
+            subtitle='Refine skills and earn experience points'/>
 
           <MenuBtn
             onPress={() => navigation.navigate('LevelUp')}
-            type='LevelUp' />
+            type='LevelUp' 
+            subtitle='Complete challenges to level up'
+          />
 
           <MenuBtn
             onPress={() => navigation.navigate('Inspiration')}
-            type='Inspiration' />
+            type='Inspiration'
+            subtitle='Check out amazing art around the web' 
+          />
 
           <MenuBtn
             onPress={() => navigation.navigate('Resources')}
-            type='Resources' />
+            type='Resources' 
+            subtitle='Learn with free tutorials and guides'
+          />
         </ImageBackground>
       </ScrollView>
     );

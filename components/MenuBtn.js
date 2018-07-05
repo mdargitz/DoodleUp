@@ -22,16 +22,16 @@ class MenuBtn extends React.Component {
       iconName = 'heart';    
     }
     else if (this.props.type === 'Gesture') {
-      backgroundColor = '#af5984';
-      iconName = 'heart';
+      backgroundColor = '#A96DA3';
+      iconName = 'pencil';
     }
     else if (this.props.type === 'Study'){
-      backgroundColor = '#a23a6e';
-      iconName = 'star';
+      backgroundColor = '#7A5980';  
+      iconName = 'eye';
     }
     else if (this.props.type === 'FreeDraw'){
-      backgroundColor = '#961f5b';  
-      iconName = 'heart'; 
+      backgroundColor = '#3B3B58';
+      iconName = 'paint-brush'; 
     }
     else {
       backgroundColor = '#3B3B58';
@@ -50,13 +50,16 @@ class MenuBtn extends React.Component {
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.8,
         shadowRadius: 2,
+        padding: 30
       },
       textStyle : {
         color: '#fff',
         fontSize: 30,
-        padding: 30
-       
+      },
+      subtitleStyle : {
+        color: '#fff'
       }
+
     });
 
     return (
@@ -70,6 +73,11 @@ class MenuBtn extends React.Component {
             style={styles.textStyle}
           >
             {this.props.type}
+          </Text>
+          <Text
+            style={styles.subtitleStyle}
+          >
+            {this.props.subtitle}
           </Text>
         </TouchableOpacity>
       </View>
