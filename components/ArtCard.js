@@ -12,7 +12,7 @@ function ArtCard(props) {
     return <Error />;
   }
   return (
-    <View>
+    <View style={styles.viewStyle}>
       <TouchableOpacity
         onPress={()=>Linking.openURL(props.piece.url)}
       >
@@ -20,7 +20,7 @@ function ArtCard(props) {
           source={{ uri: props.piece.image }}
           style={{ height: 400, width: 300 }}
         />
-        <Text>
+        <Text style={styles.textStyle}>
           {props.piece.name} by {props.piece.artist}
         </Text>
       </TouchableOpacity>
@@ -28,6 +28,22 @@ function ArtCard(props) {
   );
 }
 
+const styles = {
+  viewStyle : {
+    justifyContent:'center',
+    alignItems: 'center',
+    margin: 20,
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    padding: 30
+  },
+  textStyle : {
+    marginTop: 10
+  }
+};
 
 const mapStateToProps = (state, props) => {
   return {
