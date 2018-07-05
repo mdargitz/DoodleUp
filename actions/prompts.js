@@ -23,16 +23,14 @@ export const promptError = error => {
 
 export const fetchPrompt = () => dispatch => {
   dispatch(requestPrompt());
-  fetch('https://ineedaprompt.com/dictionary/default/prompt?q=adj+noun+verb+noun+location')
+  fetch('https://ineedaprompt.com/dictionary/default/prompt?q=adj+noun+verb+location')
     .then(result => {
       return result.json();
     })
     .then(result => {
-      console.log(result);
       dispatch(promptSuccess(result.english));
     })
     .catch (error =>{
-      console.log(error);
       dispatch(promptError(error));
     });
 };
