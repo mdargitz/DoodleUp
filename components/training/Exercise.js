@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Image, Button } from 'react-native';
 import { connect } from 'react-redux';
 import CustomButton from '../CustomButton';
-import { fetchImage } from '../actions/training';
-import { incrementExperience } from '../actions/points';
+import { fetchImage } from '../../actions/training';
+import { incrementExperience } from '../../actions/points';
 
 class Exercise extends React.Component {
 

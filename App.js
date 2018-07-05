@@ -1,22 +1,22 @@
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
-import HomeScreen from './HomeScreen';
-import Training from './Training';
-import LevelUp from './LevelUp';
-import Inspiration from './Inspiration';
-import Resources from './Resources';
-import LandingPage from './LandingPage';
-import Gesture from './training/Gesture';
-import Study from './training/Study';
-import FreeDraw from './training/FreeDraw';
-import Finished from './training/Finished';
+import HomeScreen from './components/HomeScreen';
+import Training from './components/Training';
+import LevelUp from './components/LevelUp';
+import Inspiration from './components/Inspiration';
+import Resources from './components/Resources';
+import LandingPage from './components/LandingPage';
+import Gesture from './components/training/Gesture';
+import Study from './components/training/Study';
+import FreeDraw from './components/training/FreeDraw';
+import Finished from './components/training/Finished';
 import { Provider } from 'react-redux';
 import store from './store';
-import Level1 from './levelup/Level1';
-import Level2 from './levelup/Level2';
-import Level3 from './levelup/Level3';
-import Level4 from './levelup/Level4';
-import Level5 from './levelup/Level5';
+import Level1 from './components/levelup/Level1';
+import Level2 from './components/levelup/Level2';
+import Level3 from './components/levelup/Level3';
+import Level4 from './components/levelup/Level4';
+import Level5 from './components/levelup/Level5';
 
 const RootStack = createStackNavigator({
   Landing: {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, Image} from 'react-native';
 import CustomButton from '../CustomButton';
 import { connect } from 'react-redux';
-import { incrementLevel } from '../actions/points';
+import { incrementLevel } from '../../actions/points';
 
 function Level2(props){
   return (

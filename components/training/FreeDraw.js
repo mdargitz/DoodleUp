@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text, View, Button} from 'react-native';
 import {connect} from 'react-redux';
-import { fetchPrompt } from '../actions/prompts';
+import { fetchPrompt } from '../../actions/prompts';
 import CustomButton from '../CustomButton';
 import Loading from '../Loading';
 import Error from '../Error';
-import { incrementExperience } from '../actions/points';
+import { incrementExperience } from '../../actions/points';
 
 class FreeDraw extends React.Component {
 
