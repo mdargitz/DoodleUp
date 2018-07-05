@@ -1,5 +1,5 @@
 import React from 'react';
-import Challenge from './Challange';
+import Challenge from './Challenge';
 
 export default function Level3(props){
   return (
