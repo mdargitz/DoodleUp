@@ -15,7 +15,7 @@ function Level1(props){
       <CustomButton
         buttonText='Done!'
         onPress={() => {
-          props.dispatch(incrementLevel());
+          props.dispatch(incrementLevel(1));
           props.navigation.navigate('LevelUp');
         }}
       />

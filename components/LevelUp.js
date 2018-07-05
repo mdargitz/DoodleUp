@@ -1,42 +1,57 @@
 import React from 'react';
-import { Text, Button, View } from 'react-native';
+import { Text, Button, ScrollView, ImageBackground } from 'react-native';
 import { connect } from 'react-redux';
-import Level1 from './levelup/Level1';
+import LevelBtn from './levelup/LevelBtn';
 
 class LevelUp extends React.Component {
 
   render() {
-    
+
     return (
-      <View>
-        <Text>If you have enough points you may Level Up here! You do not need to complete the levels in order.</Text>
-        <Text>You are at level {this.props.level} and currently have {this.props.points} points </Text>
-        <Button
-          title='Level 1 - Requires 3 points'
-          onPress={() => this.props.navigation.navigate('Level1')}
-          disabled={this.props.points < 3 }
-        />
-        <Button
-          title='Level 2 - Requires 7 points'
-          onPress={() => this.props.navigation.navigate('Level2')}
-          disabled={this.props.points < 7 }
-        />
-        <Button
-          title='Level 3 - Requires 13 points'
-          onPress={() => this.props.navigation.navigate('Level3')}
-          disabled= {this.props.points < 13}
-        />
-        <Button
-          title='Level 4 - Requires 20 points'
-          onPress={() => this.props.navigation.navigate('Level4')}
-          disabled={this.props.points < 20}
-        />
-        <Button
-          title='Level 5 - Requires 30 points'
-          onPress={() => this.props.navigation.navigate('Level5')}
-          disabled={this.props.points < 30}
-        />
-      </View>
+      <ScrollView style={{height: '100%'}}>
+        <ImageBackground
+          source={{uri : 'https://image.ibb.co/cJfEwd/mesh_1430107_640.png'}}
+          style={{width:'100%', height:'100%'}}
+        >
+          <Text>If you have enough points you may Level Up here! You do not need to complete the levels in order.</Text>
+          <Text>You are at level {this.props.level} and currently have {this.props.points} points </Text>
+          <LevelBtn
+            btnText='Level 1 : Form'
+            requiredPoints={3}
+            requiredLevel={0}
+            onPress={() => this.props.navigation.navigate('Level1')}
+            image='https://image.ibb.co/hjdZey/sanah_suvarna_161883_unsplash.jpg'
+          />
+          <LevelBtn
+            btnText='Level 2 : Perspective'
+            requiredPoints={7}
+            requiredLevel={1}
+            onPress={() => this.props.navigation.navigate('Level2')}
+            image='https://image.ibb.co/dzm1sJ/jorge_gascon_23288_unsplash.jpg'
+          />
+          <LevelBtn
+            btnText='Level 3 : Anatomy'
+            requiredPoints={13}
+            requiredLevel={2}
+            onPress={() => this.props.navigation.navigate('Level3')}
+            image='https://image.ibb.co/gEP4CJ/israel_gil_596312_unsplash.jpg'
+          />
+          <LevelBtn
+            btnText='Level 4 : Composition'
+            requiredPoints={20}
+            requiredLevel={3}
+            onPress={() => this.props.navigation.navigate('Level4')}
+            image='https://image.ibb.co/dagnzy/shea_rouda_624353_unsplash.jpg'
+          />
+          <LevelBtn
+            btnText='Level 5 : Value &amp; Lighting'
+            requiredPoints={30}
+            requiredLevel={4}
+            onPress={() => this.props.navigation.navigate('Level5')}
+            image='https://image.ibb.co/m4B9CJ/reinhart_julian_569049_unsplash.jpg'
+          />
+        </ImageBackground>
+      </ScrollView>
     );
   }
 }
