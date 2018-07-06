@@ -1,5 +1,6 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0"
+    "sdkVersion": "27.0.0",
+    "description": "DoodleUp is a gamified version of goal setting, specifically to hone your artistic skills. Train to earn experience and complete level up challenges!"
   }
 }

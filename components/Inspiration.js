@@ -17,7 +17,7 @@ class Inspiration extends React.Component {
           style={{ height: '100%', width: '100%' }}
         >
           <View style={styles.titleViewStyle}>
-            <Text style={styles.headerText}> Check out Some amazing artists</Text>
+            <Text style={styles.headerText}> Check out some amazing artists</Text>
             <Text style={styles.subtitleText}>Click the links below or take a look at some recent art.</Text>
 
             <Button
