@@ -4,7 +4,7 @@ import { Text, View, Image, TouchableOpacity, Linking } from 'react-native';
 import Loading from './Loading';
 import Error from './Error';
 
-function ArtCard(props) {
+export function ArtCard(props) {
   if (props.loading || !props.piece) {
     return <Loading />;
   }

@@ -1,8 +1,11 @@
 import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
+import { connect } from 'react-redux';
 import CustomButton from './CustomButton';
 
-export default class LandingPage extends React.Component {
+export class LandingPage extends React.Component {
+
+
   render() {
     return (
       <ImageBackground
@@ -21,6 +24,8 @@ export default class LandingPage extends React.Component {
     );
   }
 }
+
+export default connect()(LandingPage);
 
 const styles = {
   viewStyle: {

@@ -1,0 +1,671 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://image.ibb.co/cJfEwd/mesh_1430107_640.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": "100%",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,.5)",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "paddingTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+       Need to brush up on some skills?
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 20,
+          "paddingBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Take a look at our currated list of tutorials!
+    </Text>
+  </View>
+  <RCTScrollView>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.5)",
+            "color": "#fff",
+            "fontSize": 25,
+            "padding": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Gesture Drawing
+      </Text>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://sophialearning.s3.amazonaws.com/packet_logos/202783/large/Quick_gesture_drawings.jpg",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Introduction to Gessture Drawing
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://th09.deviantart.net/fs70/PRE/i/2010/125/0/b/Gesture_Drawing_Studies_by_studionap.jpg",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Beginner Gesture Drawing
+          </Text>
+        </View>
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.5)",
+            "color": "#fff",
+            "fontSize": 25,
+            "padding": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+         Drawing from Life
+      </Text>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://emptyeasel.com/wp-content/uploads/2013/08/sketch9-full-range-of-values-large-1.jpg",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            How to Draw What You See
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.artyfactory.com/still-life/images/still_life_pencil_8.jpg",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            Still Life with Pencil
+          </Text>
+        </View>
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.5)",
+            "color": "#fff",
+            "fontSize": 25,
+            "padding": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Artistic Concepts
+      </Text>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://cms-assets.tutsplus.com/uploads/users/108/posts/24486/final_image/think-with-forms-final.png",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            How to Draw What You See
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://www.artistsnetwork.com/wp-content/uploads/2017/06/OnePointPerspectiveReference.png",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            The Beginning Artists Guide to Perspective Drawing
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.artinstructionblog.com/wp-content/uploads/2009/08/values-sheridoty-2009_img_4-300x184.jpg",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            A Theory of Light and Shade
+          </Text>
+        </View>
+      </View>
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3B3B58",
+              "justifyContent": "center",
+              "margin": 20,
+              "opacity": 1,
+              "padding": 30,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://cms-assets.tutsplus.com/uploads/users/110/posts/20417/image/face-front.jpg",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 20,
+                "padding": 10,
+                "textAlign": "center",
+              }
+            }
+          >
+            The Human Face
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

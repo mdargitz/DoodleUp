@@ -3,7 +3,7 @@ import { Text, View, ScrollView, ImageBackground } from 'react-native';
 import { connect } from 'react-redux';
 import LevelBtn from './levelup/LevelBtn';
 
-class LevelUp extends React.Component {
+export class LevelUp extends React.Component {
 
   render() {
 

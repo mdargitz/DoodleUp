@@ -4,7 +4,7 @@ import { fetchArt } from '../actions/inspiration';
 import { connect } from 'react-redux';
 import ArtCard from './ArtCard';
 
-class Inspiration extends React.Component {
+export class Inspiration extends React.Component {
 
   componentDidMount() {
     this.props.dispatch(fetchArt());
